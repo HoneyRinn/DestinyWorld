@@ -25,7 +25,7 @@ class GuideActivity : AppCompatActivity() {
         viewpager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback(){
             override fun onPageSelected(position: Int){
                 when(position){
-                    3-> {
+                    2-> {
                         button.text = "Начать"
                     }
                     else->{
@@ -38,7 +38,7 @@ class GuideActivity : AppCompatActivity() {
 
     fun guide(view: android.view.View) {
         when(viewpager.currentItem){
-            3->startActivity(Intent(this,SingUpActivity::class.java))
+            2->startActivity(Intent(this,SingUpActivity::class.java))
             else->viewpager.currentItem++
         }
     }
