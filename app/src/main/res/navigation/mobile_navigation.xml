@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/worldFragment">
+    <fragment
+        android:id="@+id/worldFragment"
+        android:name="com.example.destinyworld.bottomnavmenu.ui.world.worldFragment"
+        android:label=""
+        tools:layout="@layout/world_fragment" />
+    <fragment
+        android:id="@+id/gunsFragment"
+        android:name="com.example.destinyworld.bottomnavmenu.ui.guns.gunsFragment"
+        android:label=""
+        tools:layout="@layout/guns_fragment" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.destinyworld.bottomnavmenu.ui.profile.profileFragment"
+        android:label=""
+        tools:layout="@layout/profile_fragment" />
+</navigation>
