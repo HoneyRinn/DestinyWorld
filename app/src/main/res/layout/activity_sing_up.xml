@@ -6,99 +6,104 @@
     android:background="@drawable/darkback"
     android:layout_height="match_parent"
     tools:context=".SingUpActivity">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/logo" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Войдите в аккаунт"
-        android:textColor="@color/white"
-        android:gravity="center"
-        android:layout_marginTop="50dp"
-        android:textSize="30dp"
-        android:fontFamily="@font/raleway_reg"/>
-
-    <EditText
-        android:id="@+id/email"
-        android:layout_width="360dp"
-        android:layout_height="44dp"
-        android:background="@drawable/textures"
-        android:hint="E-mail"
-        android:textColorHint="@color/gray"
-        android:textColor="@color/gray"
-        android:textSize="14dp"
-        android:inputType="textEmailAddress"
-        android:paddingLeft="15dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"/>
-
-    <EditText
-        android:id="@+id/password"
-        android:layout_width="360dp"
-        android:layout_height="44dp"
-        android:background="@drawable/textures"
-        android:hint="Пароль"
-        android:textColorHint="@color/gray"
-        android:textColor="@color/gray"
-        android:textSize="14dp"
-        android:inputType="textPassword"
-        android:paddingLeft="15dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"/>
-
-    <Button
-        android:id="@+id/nextBtn"
-        android:layout_width="360dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginTop="30dp"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/lightGray"
-        android:insetTop="0dp"
-        android:insetBottom="0dp"
-        android:onClick="next_activity"
-        android:text="Далее"
-        android:textAllCaps="false"
-        android:textColor="@color/grossBlue"
-        android:textStyle="bold"
-        app:cornerRadius="4dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="TouchTargetSizeCheck" />
 
     <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="У вас еще нет аккаунта?"
-        android:textColor="@color/white"
-        />
-    <TextView
-        android:paddingLeft="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Зарегистрируйтесь!"
-        android:textColor="@color/lightBlue"
-        android:onClick="registr_activity"/>
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/raleway_reg"
+            android:gravity="center"
+            android:text="Войдите в аккаунт"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="360dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/textures"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="15dp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="360dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/textures"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColor="@color/gray"
+            android:textColorHint="@color/gray"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="360dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="0dp"
+            android:backgroundTint="@color/lightGray"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:onClick="next_activity"
+            android:text="Далее"
+            android:textAllCaps="false"
+            android:textColor="@color/grossBlue"
+            android:textStyle="bold"
+            app:cornerRadius="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="У вас еще нет аккаунта?"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="registr_activity"
+                android:paddingLeft="5dp"
+                android:text="Зарегистрируйтесь!"
+                android:textColor="@color/lightBlue" />
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

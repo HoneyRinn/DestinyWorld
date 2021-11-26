@@ -1,6 +1,19 @@
 package com.example.destinyworld
 
+import android.provider.ContactsContract
+
 data class guide(val title:String, val desc:String, val image:Int)
+
+data class login(val id:String,
+                 val email:String,
+                 val nickName: String,
+                 val avatar:String,
+                 val token:String)
+
+
+
+
+
 object List {
     val list = arrayListOf(
         guide("Узнайте лор игры!","Появившийся в Солнечной системе Странник дал человечеству возможность бороться за право существовать. С силой самого Света на их стороне, люди смогли войти в свой Золотой Век.\n",
