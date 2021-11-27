@@ -3,13 +3,13 @@ package com.example.destinyworld
 import android.provider.ContactsContract
 
 data class guide(val title:String, val desc:String, val image:Int)
+data class planets(val image:Int, val title:String, val text:String)
 
 data class login(val id:String,
                  val email:String,
                  val nickName: String,
                  val avatar:String,
                  val token:String)
-
 
 
 
@@ -24,5 +24,14 @@ object List {
         guide("Дерзай, Страж!",
         "Получите ценнейший опыт благодаря новой информации и прорывайся к новым рубежам, все в твои руках!\n",
         R.drawable.frame3)
+    )
+}
+
+object ListOfPlanets {
+    val ListOfPlanets = arrayListOf(
+        planets(R.drawable.planet,"Сатурн", "Прекрасная планета"),
+        planets(R.drawable.planet,"Венера", "Прекрасная планета"),
+        planets(R.drawable.planet,"Юпитер", "Прекрасная планета"),
+        planets(R.drawable.planet,"Ио", "Прекрасная планета"),
     )
 }

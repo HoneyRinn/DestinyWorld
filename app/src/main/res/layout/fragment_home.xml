@@ -4,52 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/darkback"
     tools:context=".ui.home.HomeFragment">
 
-    <ImageView
-        android:id="@+id/avatar_img"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="22dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:src="@tools:sample/avatars"
-        />
+<!--    <ImageView-->
+<!--        android:id="@+id/avatar_img"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginTop="22dp"-->
+<!--        android:layout_marginEnd="22dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:src="@tools:sample/avatars"-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/name_text"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:layout_marginEnd="11dp"-->
+<!--        android:fontFamily="@font/raleway_reg"-->
+<!--        android:text="HoneyRinn"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="20dp"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/avatar_img"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/avatar_img" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/logo"-->
+<!--        android:layout_width="60dp"-->
+<!--        android:layout_height="60dp"-->
+<!--        android:layout_marginStart="22dp"-->
+<!--        android:layout_marginTop="22dp"-->
+<!--        android:src="@drawable/destinylogo"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/email_text"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="11dp"-->
+<!--        android:fontFamily="@font/raleway_thin"-->
+<!--        android:text="TextView"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/avatar_img"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/name_text" />-->
 
     <TextView
-        android:id="@+id/name_text"
+        android:id="@+id/text_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="11dp"
+        android:layout_marginTop="90dp"
         android:fontFamily="@font/raleway_reg"
-        android:text="HoneyRinn"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/avatar_img"
-        app:layout_constraintTop_toTopOf="@+id/avatar_img" />
-
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="22dp"
-        android:src="@drawable/destinylogo"
+        android:text="История мира"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/email_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="11dp"
-        android:fontFamily="@font/raleway_thin"
-        android:text="TextView"
-        android:textColor="#FFFFFF"
-        app:layout_constraintEnd_toStartOf="@+id/avatar_img"
-        app:layout_constraintTop_toBottomOf="@+id/name_text" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_planets"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_title"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
