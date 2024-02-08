@@ -54,7 +54,8 @@ class HomeFragment : Fragment() {
         //Glide.with(requireActivity()).load(avatar).circleCrop().into(ImageView)
 //
         //Toast.makeText(requireContext(), avatar , Toast.LENGTH_SHORT).show()
-        recyclerView = root.findViewById(R.id.recycler_planets)
+
+        recyclerView = root.findViewById(R.id.recycler_planet)
         recyclerView.adapter = ListOfPlanets.ListOfPlanets?.let { planetsAdapter(requireContext()!!, it) }
 
         return root

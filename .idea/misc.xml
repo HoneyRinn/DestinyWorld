@@ -16,21 +16,15 @@
         <entry key="..\:/Users/Distr/AndroidStudioProjects/DestinyWorld/app/src/main/res/layout/activity_menu.xml" value="0.25" />
         <entry key="..\:/Users/Distr/AndroidStudioProjects/DestinyWorld/app/src/main/res/layout/activity_registration.xml" value="0.25" />
         <entry key="..\:/Users/Distr/AndroidStudioProjects/DestinyWorld/app/src/main/res/layout/activity_sing_up.xml" value="0.25" />
-        <entry key="..\:/Users/Distr/AndroidStudioProjects/DestinyWorld/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/Distr/AndroidStudioProjects/DestinyWorld/app/src/main/res/layout/fragment_home.xml" value="0.12" />
+        <entry key="..\:/Users/Distr/AndroidStudioProjects/DestinyWorld/app/src/main/res/layout/skid_planets.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/Distr/AndroidStudioProjects/DestinyWorld/app/src/main/res/layout/test.xml" value="0.23402777777777778" />
         <entry key="..\:/Users/Distr/AndroidStudioProjects/DestinyWorld/app/src/main/res/layout/vp_adapter.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/Distr/AndroidStudioProjects/DestinyWorld/app/src/main/res/menu/bottom_nav_menu.xml" value="0.24444444444444444" />
-        <entry key="..\:/Users/student304/AndroidStudioProjects/destinyapp/app/src/main/res/drawable/backgroundsfeel.xml" value="0.14756944444444445" />
-        <entry key="..\:/Users/student304/AndroidStudioProjects/destinyapp/app/src/main/res/drawable/textures.xml" value="0.14756944444444445" />
-        <entry key="..\:/Users/student304/AndroidStudioProjects/destinyapp/app/src/main/res/layout/activity_guide.xml" value="0.24444444444444444" />
-        <entry key="..\:/Users/student304/AndroidStudioProjects/destinyapp/app/src/main/res/layout/activity_menu.xml" value="0.13680555555555557" />
-        <entry key="..\:/Users/student304/AndroidStudioProjects/destinyapp/app/src/main/res/layout/fragment_home.xml" value="0.13680555555555557" />
-        <entry key="..\:/Users/student304/AndroidStudioProjects/destinyapp/app/src/main/res/layout/skid_planets.xml" value="0.13680555555555557" />
-        <entry key="..\:/Users/student304/AndroidStudioProjects/destinyapp/app/src/main/res/layout/vp_adapter.xml" value="0.22301912568306012" />
-        <entry key="..\:/Users/student304/AndroidStudioProjects/destinyapp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
